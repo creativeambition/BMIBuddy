@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI-Amigo</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/assets/logo.svg" alt="" />
+        <h1 class="bmi">BMI</h1>
+        <h1 class="buddy">amigo</h1>
+      </div>
+
+      <div class="theme-toggle">
+        <div class="toggle"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="left">
+        <div class="intro">Hello there! <b>Did you know?</b></div>
+
+        <div class="intro-text">
+          Maintaining a healthy BMI is crucial for overall well-being. Knowing
+          your BMI category can help you identify potential health risks and
+          make informed choices for a healthier lifestyle. Fill out the form
+          with your height and weight to determine your BMI.
+        </div>
+
+        <form>
+          <div class="field">
+            <h2>USERNAME</h2>
+
+            <img src="/assets/user.png" alt="" class="illustration" />
+
+            <span
+              >Let's get to know you. Input your username in the field
+              below</span
+            >
+
+            <input
+              type="text"
+              placeholder="Username"
+              id="username"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="field value">
+            <h2>HEIGHT</h2>
+
+            <img src="/assets/height.png" alt="" class="illustration" />
+
+            <span>Input your height in the field below in meters (M)</span>
+
+            <input
+              type="text"
+              placeholder="Height"
+              name="height"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="field value">
+            <h2>WEIGHT</h2>
+
+            <img src="/assets/scale.png" alt="" class="illustration" />
+
+            <span>Input your weight in the field below in kilograms (KG)</span>
+
+            <input
+              type="text"
+              placeholder="Weight"
+              name="weight"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <button type="submit">
+            BMI
+            <box-icon name="chevrons-right" class="arrow"></box-icon>
+          </button>
+        </form>
+      </div>
+
+      <div class="res">
+        <header>
+          <h2><em>unknown_user</em> <b>BMI</b> info</h2>
+        </header>
+
+        <div class="info">
+          <div class="height">
+            <h3>Height</h3>
+            <hr />
+            <div class="value">UNKNOWN</div>
+          </div>
+
+          <div class="weight">
+            <h3>Weight</h3>
+            <hr />
+            <div class="value">UNKNOWN</div>
+          </div>
+        </div>
+
+        <div class="bmi-value">
+          <h1>...</h1>
+          <h2>UNKNOWN</h2>
+        </div>
+
+        <div class="bmi-stat">
+          <div class="category">
+            <span>underweight</span>
+            <span>normal</span>
+            <span>overweight</span>
+            <span>obese</span>
+          </div>
+          <div class="range">
+            <div class="slider"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
